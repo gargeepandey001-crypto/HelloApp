@@ -1,9 +1,11 @@
 public class HelloApp {
     public static void main(String[] args) {
-        // Use a ternary operator to assign the name based on argument availability
-        String name = (args.length > 0) ? args[0] : "World";
-        
-        // Output the personalized or default greeting
+        String name = "World";
+
+        if (args.length > 0) {
+            name = args[0];
+        }
+
         System.out.println("Hello, " + name + "!");
     }
 }
