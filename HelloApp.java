@@ -1,13 +1,9 @@
-public class UC2 {
+public class HelloApp {
     public static void main(String[] args) {
-        String name;
-
-        if (args.length > 0) {
-            name = args[0];
-        } else {
-            name = "World";
-        }
-
+        // Use a ternary operator to assign the name based on argument availability
+        String name = (args.length > 0) ? args[0] : "World";
+        
+        // Output the personalized or default greeting
         System.out.println("Hello, " + name + "!");
     }
 }
